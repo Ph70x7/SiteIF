@@ -15,7 +15,7 @@ html::-webkit-scrollbar-thumb {
 /*-----------------------------------------------------------*/
 
 body {
-    color: aliceblue;
+    color: white;
     background-color: #a0ff76;
     margin: 0%;
     padding: 0%;
@@ -27,8 +27,8 @@ header {display: none;}
 /*-----------------------------------------------------------*/
 
 #section-1 {
+    position: relative;
     background-color: #a0ff76;
-    background-image: url(./imagens/Menu-Principal.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -38,41 +38,57 @@ header {display: none;}
     padding: 0%;
 }
 
+.imghome{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+    width: 100%;
+    height: 90vh;
+    margin: 0%;
+    padding: 0%;
+}
+
 #one {
     position: absolute;
-    font-family: 'Lucida Sans';
-    font-size: 10vw;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 4.3vw;
     text-shadow: 0.2vw 0.2vw 0.9vw rgb(45, 108, 45);
+    top: 35%;
     margin: 0%;
-    left: 50%;
-    top: 44%;
-    transform: translate(-50%, -50%);
     text-decoration-style: none;
-    transform-box: 10vh;
 }
+
+#y{margin: 0%;}
 
 
 .three {
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: end;
-    color: aliceblue;
-    font-family: Verdana;
+    font-family: "Montserrat", sans-serif;
     text-shadow: 0.2vw 0.2vw 0.9vw rgb(45, 108, 45);
     right: 4%;
     bottom: 6%;
     line-height: 0.6vw;
     margin: 0%;
     padding: 0%;
+    line-height: 120%;
+    font-weight:bolder;
+}
+
+#a{
+    color: white;
     text-decoration: none;
     list-style: none;
 }
 
-
-
 .arrow {
     position: absolute;
-    border: solid rgb(255, 255, 255);
+    border: solid white;
     border-width: 0 0.6vh 0.6vh 0;
     display: inline-block;
     padding: 0.7vh;
@@ -86,7 +102,7 @@ header {display: none;}
 .logo {
     position: absolute;
     width: 8%;
-    top: 12%;
+    top: 7%;
     left: 4%;
     margin: 0%;
     box-shadow: rgb(45, 108, 45);
@@ -109,8 +125,8 @@ header {display: none;}
     width: 3vw;
     height: 3vw;
     background-color: rgba(45, 108, 45, 0.103);
-    color:aliceblue;
-    border: 0.3vw solid aliceblue;
+    color:white;
+    border: 0.3vw solid white;
     border-radius: 50%; 
     box-shadow: 0 0 1vh rgba(45, 108, 45, 0.848);
     text-decoration: none;
@@ -179,9 +195,6 @@ header {display: none;}
 
 #section-2 {
     background: linear-gradient(154deg, white, #d1f5c0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
     background-attachment: fixed;
     margin: 0%;
     padding: 0%;
@@ -191,9 +204,6 @@ header {display: none;}
 
 #section-3 {
     background: linear-gradient(154deg, white, #d1f5c0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
     background-attachment: fixed;
     margin: 0%;
     padding: 0%;
@@ -203,9 +213,6 @@ header {display: none;}
 
 #section-4 {
     background: linear-gradient(154deg, white, #d1f5c0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
     background-attachment: fixed;
     margin: 0%;
     padding: 0%;
@@ -215,9 +222,6 @@ header {display: none;}
 
 #section-5 {
     background: linear-gradient(154deg, white, #d1f5c0);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
     background-attachment: fixed;
     margin: 0%;
     padding: 0%;
@@ -236,6 +240,7 @@ header {display: none;}
     padding: 0%;
     flex-wrap: wrap;
 }
+
 
 button {
     background-color: #86ff56;
@@ -256,11 +261,20 @@ button {
 }
 
 button:hover {
-    /*box-shadow: inset 0 0 2vw #009127;*/
     cursor: pointer;
     border: 0.2vw solid green;
     transform: scale(1.02);
     transition: ease-in 0.15s;
+}
+
+#none{
+
+}
+
+#none:hover{
+    border: none;
+    color: #000000;
+    background-color: #919191;
 }
 
 .collum-01 {
@@ -290,11 +304,6 @@ button:hover {
 .Tt-bt:hover {
     height: 7vh;
     margin: 0.5vh;
-}
-
-.pg2 {
-    margin: 0%;
-    padding: 0%;
 }
 
 .footer {
@@ -386,7 +395,7 @@ footer {
 .navbar {
     position:relative;
     width: 100%;
-    background-color: aliceblue;
+    background-color: rgb(245, 245, 245);
     color: #013D07;
     padding: 2.9vh 0;
   }
@@ -427,6 +436,10 @@ footer {
     height: 3.1vw;
 }
 
+#show{
+    display: none;
+}
+
 /*-----------------------------------------------------------*/
 
 
@@ -436,14 +449,23 @@ footer {
     #section-3 {height: 55vh;}
     #section-4 {height: 55vh;}
     #section-5 {height: 60vh;}
-    #one   {top: 30%;}
-    .three {top: 47%;}
-    .arrow {bottom: 41%;}
+    #one   {top: 38%;}
+    .three {bottom: 11%;}
+    .arrow {bottom: 7%;}
+
+    .imghome {height: 55vh;}
 
     .Tt-bt {
         height: 4.2vh;
         margin: 0.9vh;
         padding: 0%;
+    }
+
+    .Tt-bt:hover{
+        height: 4.2vh;
+        margin: 0.9vh;
+        padding: 0%;
+        border-radius: 2rem;
     }
 
     button {
@@ -456,6 +478,9 @@ footer {
 
     button:hover {
         border: 0.2vw solid green;
+        border-radius: 1.3vw;
+        height: 5vh;
+        margin: 1.5vh;
     }
 
     .o {
@@ -486,31 +511,31 @@ footer {
     #scroll-to-top a {
         width: 9vw;
         height: 9vw;
-        border: 0.7vw solid aliceblue;
+        border: 0.7vw solid white;
         font-size: 4vw; 
     }
+
+    #show{display: inline;}
 
     #section-1 {height: 70vh;}
     #section-2 {height: 50vh;}
     #section-3 {height: 156vh;}
-    #section-4 {height: 138vh;}
+    #section-4 {height: 151vh;}
     #section-5 {height: 175vh;}
 
+    .imghome {height: 70vh;}
+
     #one {
-        top: 25%;
-        font-size: 15vw;
-        right: 0%;
-        left: 50%;
-        transform: translate(-50%);
-        padding: 0%;
-        text-align: center;
+        top: 32%;
+        font-size: 8vw;
+        line-height: 150%;
     }
 
     .three {
+        bottom: 20%;
         margin: 0%;
         padding: 0%;
-        bottom: 35%;
-        font-size: 2.2vh;
+        font-size: 2.7vh;
         text-align: center;
         left: 50%;
         transform: translate(-50%);
@@ -546,29 +571,36 @@ footer {
         justify-content: center;
     }
 
+
+
     .o {display: none;}
     .Tt {font-size: 9vw;}
     .Tt2 {font-size: 9vw;}
 
     .Tt-bt {
         margin: 1vh;
-        height: 4.4vh;
+        height: 6vh;
         font-size: 3vw;
-        width: 63vw;
-        height: 5.6vh;
-        border-radius: 3.5vh;
-        margin: 1vh;
-        font-size: 3vw;
+        width: 63vw;;
+        border-radius: 2.4vh;
         line-height: 15px;
         padding: 0%;
     }
 
-    .Tt-bt:hover {height: 5.6vh;}
+    .Tt-bt:hover {
+        margin: 1vh;
+        height: 6vh;
+        font-size: 3vw;
+        width: 63vw;
+        border-radius: 2.4vh;
+        line-height: 15px;
+        padding: 0%;
+    }
 
     button {
         width: 63vw;
         height: 6.7vh;
-        border-radius: 4vh;
+        border-radius: 2.6vh;
         font-size: 3.4vw;
         line-height: 20px;
         margin: 1.2vh;
@@ -576,19 +608,30 @@ footer {
 
     button:hover {
         border: 0.6vw solid green;
+        border-radius: 2.6vh;
+        width: 63vw;
+        height: 6.7vh;
+        font-size: 3.4vw;
+        margin: 1.2vh;
+    }
+
+    #none:hover{
+        border: 0.6vw none;
+        color: #000000;
+        background-color: #919191;
     }
 
     .sobre {
         font-size: 3vw;
         line-height: 2vh;
-        border: 0.5vw solid aliceblue;
+        border: 0.5vw solid white;
         width: 20%;
     }
 
     .sobre:hover {
         font-size: 3vw;
         line-height: 2vh;
-        border: 0.5vw solid aliceblue;
+        border: 0.5vw solid white;
         width: 20%;
     }
 
@@ -668,23 +711,19 @@ footer {
 
     #section-1 {height: 68vh;}
     #section-2 {height: 45vh;}
-    #section-3 {height: 130vh;}
-    #section-4 {height: 120vh;}
+    #section-3 {height: 126vh;}
+    #section-4 {height: 125vh;}
     #section-5 {height: 140vh;}
 
-    #one {
-        top: 25%;
-        font-size: 19vw;
-        width: 100%;
-        padding: 0%;
-    }
+    .imghome {height: 68vh;}
+
+    #one{top: 36%;}
 
     .three {
         width: 100%;
         margin: 0%;
         padding: 0%;
-        bottom: 35%;
-        font-size: 2.2vh;
+        font-size: 2.4vh;
         text-align: center;
         left: 50%;
         transform: translate(-50%);
@@ -694,7 +733,6 @@ footer {
         text-align: center;
         padding: 0%;
     }
-
     
     .logo {
         top: 5%;
@@ -716,50 +754,67 @@ footer {
     .Tt {font-size: 9vw;}
     .Tt2 {font-size: 9vw;}
 
+    .ct{height: auto;}
+
     .Tt-bt {
         margin: 0.8vh;
-        height: 3.6vh;
-        font-size: 3vw;
         width: 63vw;
-        height: 5.6vh;
-        border-radius: 3.5vh;
-        margin: 0.8vh;
+        height: 5.3vh;
+        border-radius: 2.5vh;
         font-size: 3.4vw;
         line-height: 15px;
     }
 
-    .Tt-bt:hover {height: 4.4vh;}
+    .Tt-bt:hover {
+        margin: 0.8vh;
+        width: 63vw;
+        height: 5.3vh;
+        border-radius: 2.5vh;
+        font-size: 3.4vw;
+        line-height: 15px;
+    }
 
     button {
         width: 63vw;
-        height: 5.6vh;
-        border-radius: 3.5vh;
+        height: 5.5vh;
+        border-radius: 2.7vh;
         margin: 1vh;
         font-size: 3.4vw;
         line-height: 15px;
     }
 
-    button:hover {border: 0.6vw solid green;}
+    button:hover {border: 0.6vw solid green; border-radius: 2.7vh;height: 5.5vh;}
+    #none:hover{ border: 0.6vw none; color: #000000; background-color: #919191; border-radius: 2.7vh; height: 5.5vh;margin: 1vh;}
     .footer{width: 100%;}
     .footer-content{margin: 2%;width: 75%;}
 }
 /*--------------------------------------------------------*/
 
 @media (max-height: 520px) {
-    #section-1 {height: 80vh;}
+    #section-1 {height: 85vh;}
     #section-2 {height: 70vh;}
     #section-3 {height: 78vh;}
     #section-4 {height: 78vh;}
     #section-5 {height: 90vh;}
 
-    #one{ top: 42%;}
-    .arrow{bottom: 15%;}
-    .three{top: 67%;}
+    .imghome {height: 85vh;}
+
+    #one{ top: 37%;}
+    .three{bottom: 6%;}
+    .arrow{bottom: 5%;}
+    .logo{top: 7%;}
 
     .Tt-bt {
         height: 5.5vh;
         margin: 1.2vh;
         padding: 0%;
+        border-radius: 2.5vh;
+    }
+    .Tt-bt :hover{
+        height: 5.5vh;
+        margin: 1.2vh;
+        padding: 0%;
+        border-radius: 2.5vh;
     }
 
     button {
@@ -770,6 +825,9 @@ footer {
 
     button:hover {
         border: 0.2vw solid green;
+        height: 7vh;
+        margin: 1.7vh;
+        line-height: 1.7vw;
     }
 
     .o {
@@ -777,32 +835,29 @@ footer {
         margin: 1.7vh;
     }
 
-    .logo{
-        top: 15%;
-    }
-
     footer {
         background-color: #333;
         color: #fff;
-        padding: 10px 0;
+        padding: 8px 0;
         font-family: Arial, sans-serif;
     }
     
     .fim {
         position: relative;
-        height: 15vh;
+        height: 10vh;
         top: 10%;
     }
     
 }
-@media (max-height: 380px) {
+@media (max-height: 450px) {
     #section-1 {height: 90vh;}
     #section-2 {height: 97vh;}
     #section-3 {height: 124vh;}
     #section-4 {height: 130vh;}
     #section-5 {height: 150vh;}
 
-    #one{ top: 42%;}
+    .imghome {height: 90vh;}
+
     .arrow{bottom: 4%;}
     .three{top: 70%;}
 
@@ -810,6 +865,13 @@ footer {
         height: 8vh;
         margin: 1.5vh;
         padding: 0%;
+        border-radius: 2.5vh;
+    }
+    .Tt-bt:hover{
+        height: 8vh;
+        margin: 1.5vh;
+        padding: 0%;
+        border-radius: 2.5vh;
     }
 
     button {
@@ -820,6 +882,9 @@ footer {
 
     button:hover {
         border: 0.2vw solid green;
+        height: 12vh;
+        margin: 2.7vh;
+        line-height: 1.7vw;
     }
 
     .o {
@@ -827,14 +892,10 @@ footer {
         margin: 2.7vh;
     }
 
-    .logo{
-        top: 15%;
-    }
-
     footer {
         background-color: #333;
         color: #fff;
-        padding: 10px 0;
+        padding: 8px 0;
         font-family: Arial, sans-serif;
     }
     

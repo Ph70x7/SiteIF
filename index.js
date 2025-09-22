@@ -23,7 +23,7 @@ sr.reveal('.arrow', {
     duration: 1800
 });
 
-sr.reveal('.one', {
+sr.reveal('#one', {
     rotate: { x: 20, y: 0, z: 0 },
     duration: 800
 });
