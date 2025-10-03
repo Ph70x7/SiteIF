@@ -518,7 +518,7 @@ footer {
     #show{display: inline;}
 
     #section-1 {height: 70vh;}
-    #section-2 {height: 50vh;}
+    #section-2 {height: 60vh;}
     #section-3 {height: 156vh;}
     #section-4 {height: 151vh;}
     #section-5 {height: 175vh;}
@@ -710,7 +710,7 @@ footer {
 @media (max-width: 420px) {/*Cell*/
 
     #section-1 {height: 68vh;}
-    #section-2 {height: 45vh;}
+    #section-2 {height: 50vh;}
     #section-3 {height: 126vh;}
     #section-4 {height: 125vh;}
     #section-5 {height: 140vh;}
